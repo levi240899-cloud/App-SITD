@@ -1,4 +1,10 @@
+<!DOCTYPE html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SITD Darussunnah</title>
+  
   <meta name="theme-color" content="#800000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -16,8 +22,17 @@
         `;
         const blob = new Blob([swCode], {type: 'application/javascript'});
         const swUrl = URL.createObjectURL(blob);
-        navigator.serviceWorker.register(swUrl).catch(err => console.log('SW Gagal:', err));
+        navigator.serviceWorker.register(swUrl)
+          .then(reg => console.log('Service Worker aktif!'))
+          .catch(err => console.log('SW Gagal:', err));
       });
     }
   </script>
 </head>
+<body style="background-color: #4a0e17; color: white; font-family: sans-serif; text-align: center; padding: 50px;">
+
+  <h1>SITD Darussunnah</h1>
+  <p>Sistem Informasi Teknologi Digital sedang dalam pengembangan.</p>
+
+</body>
+</html>

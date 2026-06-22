@@ -2,7 +2,7 @@
   "name": "SITD Darussunnah",
   "short_name": "SITD",
   "description": "Sistem Informasi Teknologi Digital Darussunnah",
-  "start_url": ".",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#4a0e17",
   "theme_color": "#800000",
